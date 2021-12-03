@@ -263,21 +263,23 @@ header video {
   display: block;
   margin: auto; }
 
-main section {
+main section button {
+  border: #3c3b50 solid 0.1rem;
+  border-radius: 1rem;
+  padding: 0.86rem;
+  margin: 1.6rem 0 3.25rem 0;
+  background: #f0f0e1; }
+  main section button:hover {
+    background: #5bda54; }
+  main section button a {
+    text-decoration: none;
+    color: #0d141c; }
+
+.textAlign {
   text-align: center; }
-  main section h2 {
-    margin: 3.25rem 0 1.6rem 0; }
-  main section button {
-    border: #3c3b50 solid 0.1rem;
-    border-radius: 1rem;
-    padding: 0.86rem;
-    margin: 1.6rem 0 3.25rem 0;
-    background: #f0f0e1; }
-    main section button:hover {
-      background: #5bda54; }
-    main section button a {
-      text-decoration: none;
-      color: #0d141c; }
+
+.oopsMargin {
+  margin: 3.25rem 0 1.6rem 0; }
 
 @media only screen and (min-width: 758px) {
   nav div a img {
