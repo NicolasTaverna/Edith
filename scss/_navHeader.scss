@@ -1,0 +1,50 @@
+
+nav{
+	@include displayFlex (space-between);
+	align-content: center;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	border-bottom: $border solid 0.1rem;
+	div{
+		position: relative;
+		margin: 1.3rem 0 1.3rem 1.3rem;
+		a{
+			img{
+				width: 1.5rem;
+			}
+		}
+	}
+	ul{
+		@include displayFlex (flex-end);
+		align-items: center;
+		margin: 1.3rem 1.3rem 1.3rem 0;
+		width: 75%;
+		li{
+			a{
+				text-decoration: none;
+				margin-left: 1.3rem;
+				margin-left: 0.65rem;
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+
+header{
+	div{
+		img{
+			width: 100%;
+		}
+		video{
+			width: 100%;
+			display: none;
+		}
+	}
+}
+
+.displayNone{
+	display: none;
+}

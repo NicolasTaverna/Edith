@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
+
+$fontMain: 'Montserrat', sans-serif;
+
+*{
+	font-family: $fontMain;
+	font-size: 62.5%;
+	color: $text;
+}
+
+@mixin fontStyle ($fontSize, $fontWeight){
+	font-size: $fontSize;
+	font-weight: $fontWeight;
+}
+
+h1{
+	@include fontStyle (3.6rem, 700);
+	color: $primary;
+	text-align: center;
+	margin: 3.25rem;
+}
+
+th, h2{
+	@include fontStyle (2.05rem, 700);
+	font-style: italic;
+}
+
+li, a, p, legend, label{
+	@include fontStyle (1.55rem, 400);
+}
+
+input, textarea{
+	@include fontStyle (1.35rem, 400);
+}

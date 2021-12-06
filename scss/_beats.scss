@@ -1,0 +1,27 @@
+
+main{
+	section{
+		table{
+			margin: 0 auto 3.25rem auto;
+			thead{
+				tr{
+					th{
+						padding: 0.86rem 0.86rem 0 0.86rem;
+					}
+				}
+			}
+			tbody{
+				tr{
+					td{
+						padding: 0.96rem;
+						p, ul li{margin-top: 0.86rem;}
+					}
+				}
+			}
+		}
+	}
+}
+
+.textCenter{
+	padding: 1rem;
+}

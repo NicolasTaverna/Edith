@@ -1,0 +1,33 @@
+
+header{
+	video{
+		width: 39.5%;
+		display: block;
+		margin: auto;
+	}
+}
+
+main{
+	section{
+		button{
+			@include border (1rem);
+			padding: 0.86rem;
+			margin: 1.6rem 0 3.25rem 0;
+			background: $text;
+			&:hover{
+				background: $primary;
+			}
+			a{
+				text-decoration: none;
+				color: $black;
+			}
+		}
+	}
+}
+
+.textAlign{
+	text-align: center;
+}
+.oopsMargin{
+	margin: 3.25rem 0 1.6rem 0;
+}

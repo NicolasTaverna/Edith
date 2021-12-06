@@ -1,0 +1,53 @@
+
+main{
+	section{
+		form{
+			fieldset{
+				width: 66.5%;
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: repeat(6, auto);
+				grid-row-gap: 0.65rem;
+				padding: 1.3rem;
+				margin: auto;
+				input, textarea{
+					@include border (1rem);
+					padding: 0.65rem;
+					margin-bottom: 0.65rem;
+				}
+				div{
+					label{
+						font-size: 1.43rem;
+					}
+					input{
+						width: 10%;
+						position: relative;
+						top: 0.21rem;
+						left: 0.21rem;
+					}
+				}
+			}
+		}
+	}
+	section{
+		iframe{
+			margin: 3.25rem 0;
+			width: 100%;
+		}
+	}
+}
+
+.blackText{
+	color: $black;
+}
+.buttonStyle{
+	@include border (1rem);
+	width: 100%;
+}
+
+#h1Contact{
+	margin-bottom: 2.35rem;
+}
+#send:hover{
+	background: $primary;
+}

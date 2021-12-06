@@ -1,0 +1,33 @@
+
+footer{
+	@include displayFlex (space-between)
+	align-items: center;
+	margin-top: auto;
+	border-top: $border solid 0.1rem;
+	p{
+		margin: 1.3rem;
+		color: $secondary;
+	}
+	div{
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		div{
+			position: relative;
+			right: 1.3rem;
+			margin: 0.65rem 0;
+			a{
+				display: flex;
+				align-items: center;
+				img{
+					width: 3.8rem;
+					margin-left: 1.3rem;
+				}
+			}
+		}
+	}
+}
+
+.jumpLine{
+	padding-left: 5rem;
+}

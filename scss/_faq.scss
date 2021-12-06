@@ -1,0 +1,38 @@
+
+main{
+	section{
+		ol{
+			@include border (2rem);
+			width: 21.8rem;
+			padding: 1rem;
+			list-style: decimal inside;
+			margin-bottom: 3.25rem;
+			line-height: 3.25rem;
+			li{
+				a:hover{
+					color: $primary;
+				}
+			}
+		}
+	}
+	section{
+		article{
+			h2{
+				margin: 1.3rem 0 1.95rem 0;
+			}
+		}
+	}
+}
+
+.faqPosition{
+	margin-left: 4rem;
+	justify-self: flex-start;
+}
+.faqMargin{
+	margin-left: 4rem;
+	margin-right: 4rem;
+}
+
+.textLine{
+	line-height: 2.6rem;
+}

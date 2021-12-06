@@ -1,0 +1,32 @@
+
+main{
+	section{
+		article{
+			margin-bottom: 3.25rem;
+			img{
+				border-radius: 0.4rem;
+				transition: transform 1s;
+				&:hover{
+					transform: scale(1.07) rotate(5deg);
+					cursor: pointer;
+				}
+			}
+			audio{
+				display: none;
+			}
+			div{
+				p{
+					margin-top: 0.65rem;
+				}
+			}
+		}
+	}
+}
+
+.gridBeats{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(auto);
+	justify-content: space-evenly;
+	justify-items: center;
+}

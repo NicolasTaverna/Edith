@@ -1,0 +1,65 @@
+
+$black: rgb(13, 20, 28);
+$primary: rgb(91, 218, 84);
+$secondary: rgb(160, 159, 180);
+$teartiary: rgb(33, 40, 48);
+$text: rgb(240, 240, 225);
+$border: rgb(60, 59, 80);
+
+@mixin displayFlex ($justifyContent){
+	display: flex;
+	flex-direction: row;
+	justify-content: $justifyContent;
+}
+
+@mixin border ($radius){
+	border: $border solid 0.1rem;
+	border-radius: $radius;
+}
+
+body{
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: $black url(../assets/img/background.png) fixed;
+}
+
+html{
+	scroll-padding-top: 9.2rem;
+}
+
+nav, table, section div h2, fieldset, ol, footer{
+	background: $teartiary url(../assets/img/background_table.png);
+}
+
+table, fieldset{
+	border: $border;
+	border-radius: 2rem;
+}
+
+ul{
+	list-style: none;
+}
+
+.textGreen{
+	color: $primary;
+}
+.greenIcon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	&:hover{
+		opacity: 1;
+	}
+}
+.textPurple{
+	color: $secondary;
+}
+.gridStructure{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(auto);
+	justify-content: space-evenly;
+	justify-items: center;
+}
