@@ -259,7 +259,7 @@ footer {
   padding-left: 5rem; }
 
 header video {
-  width: 39.5%;
+  width: 75%;
   display: block;
   margin: auto; }
 
@@ -280,6 +280,9 @@ main section button {
 
 .oopsMargin {
   margin: 3.25rem 0 1.6rem 0; }
+
+.findMargin {
+  margin: 0 1.6rem; }
 
 @media only screen and (min-width: 758px) {
   nav div a img {
@@ -324,4 +327,6 @@ main section button {
   main section form fieldset div {
     width: 27%; }
   .absoluteFooter {
-    position: relative; } }
+    position: relative; }
+  header video {
+    width: 39.5%; } }
